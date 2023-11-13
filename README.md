@@ -11,3 +11,4 @@ When my right thumb was sidelined by a fracture, I found myself unable to execut
 pip install SpeechRecognition
 pip install PyAudio
 ```
+*Still under development*
