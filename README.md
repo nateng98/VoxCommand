@@ -11,4 +11,4 @@ When my right thumb was sidelined by a fracture, I found myself unable to execut
 pip install SpeechRecognition
 pip install PyAudio
 ```
-*Still under development*
+*Still under development - Google API is currently too slow with its response time -> Looking for alternative that is faster*
