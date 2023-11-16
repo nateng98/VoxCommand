@@ -8,7 +8,7 @@ voiceRecognizer = sr.Recognizer()
 voiceRecognizer.energy_threshold = 300
 voiceRecognizer.pause_threshold = 1
 voiceRecognizer.dynamic_energy_threshold = False
-# print(sr.Microphone.list_microphone_names()) # see which index is your desired device to use as microphone
+print(sr.Microphone.list_microphone_names()) # see which index is your desired device to use as microphone
 
 keyboard = Controller()
 mouse = Controller()
@@ -44,12 +44,12 @@ def processing_command(text):
   elif 'switch' in text:
     mouse.press(Button.x1)
     mouse.release(Button.x1)
-    print('Pressed mouse 4')
+    print('Mouse 4 pressed')
 # Mouse key 5
   elif 'auto attack' in text:
     mouse.press(Button.x2)
     mouse.release(Button.x2)
-    print('Pressed mouse 5')
+    print('Mouse 5 pressed')
     
   elif 'goodbye vox' in text:
     print('Goodbye my beloved Nathan! I will see you again')
