@@ -1,13 +1,21 @@
 import speech_recognition as sr
+# from pynput.keyboard import Key, Controller
+from pynput.mouse import Button, Controller
+from pynput import mouse
 
 voiceRecognizer = sr.Recognizer()
+# config
 voiceRecognizer.energy_threshold = 300
 voiceRecognizer.pause_threshold = 1
 voiceRecognizer.dynamic_energy_threshold = False
-# print(sr.Microphone.list_microphone_names())
+# print(sr.Microphone.list_microphone_names()) # see which index is your desired device to use as microphone
+
+keyboard = Controller()
+mouse = Controller()
 
 # Testing voice input
 def capturing_voice():
+  # Choose the device you want to use as microphone
   with sr.Microphone(device_index=1) as mic:
     print('Listening...')
     audio = voiceRecognizer.listen(mic)
@@ -27,13 +35,22 @@ def audio_to_text(audio):
   return text.lower()
 
 # Processing command
+# Change or add any command you want
 def processing_command(text):
   if 'hey vox' in text:
     print('Hii my beloved Nathan! How can I please you?')
-  elif 'flash' in text:
+
+# Mouse key 4
+  elif 'switch' in text:
+    mouse.press(Button.x1)
+    mouse.release(Button.x1)
     print('Pressed mouse 4')
-  elif 'ignite' in text:
+# Mouse key 5
+  elif 'auto attack' in text:
+    mouse.press(Button.x2)
+    mouse.release(Button.x2)
     print('Pressed mouse 5')
+    
   elif 'goodbye vox' in text:
     print('Goodbye my beloved Nathan! I will see you again')
     return True

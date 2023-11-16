@@ -6,33 +6,11 @@ When my right thumb was sidelined by a fracture, I found myself unable to execut
 
 ### Requirements
 
-OpenAI Whisper only supports Python 3.8-3.11, so either your version has to be 3.8-3.11 or have 3.8-3.11 installed with pyenv
+1. Install SpeechRecognition
+`pip install SpeechRecognition`
 
-[How to install pyenv on windows](https://github.com/pyenv-win/pyenv-win)
+2. Install PyAudio
+`pip install PyAudio`
 
-Chocolatey 2.+
-
-[How to install chocolatey](https://docs.chocolatey.org/en-us/choco/setup)
-
-### Installation
-
-1. Install ffmpeg
-```bash
-choco install ffmpeg
-```
-
-2. Install OpenAI Whisper
-```bash
-pip install -U openai-whisper
-```
-
-3. Install SpeechRecognition and PyAudio
-```bash
-pip install SpeechRecognition
-pip install PyAudio
-```
-
-### Note:
-
-It's still under development. Currently changing from OpenAI Whisper since Google Web Speech API has really slow response time
-
+3. Install pynput
+`pip install pynput`
