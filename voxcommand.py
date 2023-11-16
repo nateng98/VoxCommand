@@ -1,4 +1,5 @@
 import speech_recognition as sr
+import whisper
 
 voiceRecognizer = sr.Recognizer()
 voiceRecognizer.energy_threshold = 300
