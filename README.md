@@ -6,7 +6,6 @@ When my right thumb was sidelined by a fracture, I found myself unable to execut
 
 ### Requirements
 
-#### Note: 
 OpenAI Whisper only supports Python 3.8-3.11, so either your version has to be 3.8-3.11 or have 3.8-3.11 installed with pyenv
 
 [How to install pyenv on windows](https://github.com/pyenv-win/pyenv-win)
@@ -32,4 +31,8 @@ pip install -U openai-whisper
 pip install SpeechRecognition
 pip install PyAudio
 ```
+
+### Note:
+
+It's still under development. Currently changing from OpenAI Whisper since Google Web Speech API has really slow response time
 
