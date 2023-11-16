@@ -7,13 +7,15 @@ When my right thumb was sidelined by a fracture, I found myself unable to execut
 ### Requirements
 
 #### Note: 
-- Microphone() will not work if you run in virtual environment. OpenAI Whisper only supports Python 3.8-3.11, so either your version has to be 3.8-3.11 or have 3.8-3.11 installed with pyenv
+OpenAI Whisper only supports Python 3.8-3.11, so either your version has to be 3.8-3.11 or have 3.8-3.11 installed with pyenv
 
 [How to install pyenv on windows](https://github.com/pyenv-win/pyenv-win)
 
+Chocolatey 2.+
+
 [How to install chocolatey](https://docs.chocolatey.org/en-us/choco/setup)
 
-#### Installation
+### Installation
 
 1. Install ffmpeg
 ```bash
