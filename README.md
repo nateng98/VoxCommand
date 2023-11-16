@@ -16,7 +16,7 @@ When my right thumb was sidelined by a fracture, I found myself unable to execut
 `pip install pynput`
 
 ## Config
-#### Select device:
+### Select device:
 Change `device_index` that corresponds to your desired microphone in `sr.Microphone(device_index=1)`
 
 ```py
@@ -32,7 +32,7 @@ print(sr.Microphone.list_microphone_names())
 ```
 and run the script. It will print out the list of all microphones on your system. Choose your device from that list (starting index is 0).
 
-#### Commands:
+### Commands:
 Change text within single quotation ' ' to your command
 
 - For mouse:
@@ -48,7 +48,7 @@ elif 'ultimate' in text:
     keyboard.release('f')
 ```
 
-#### Note:
+### Note:
 - If you are using mouse with few extra keys like MMO mouse, there're some buttons that are not specified. To find out the name of the button, run `python findButtonName.py` Everytime you click, it prints out button's name.
 
 Example: If I click mouse left, mouse 5 and mouse 4 in order, the output will be:
@@ -74,6 +74,6 @@ You said: auto attack
 Mouse 5 pressed
 ```
 
-## Author
+### Author
 
 [Nước Mắm Code](https://github.com/nateng98)
